@@ -1,0 +1,78 @@
+.cursor{
+    width: 10px;
+    height: 10px;
+    border: 2px solid #E85A4F;
+    border-radius: 50%;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+}
+
+body{
+    background-color: #EAE7DC;
+    cursor: none;
+    overflow-x: hidden;
+}
+
+
+.contact-container{
+    display: flex;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid;
+    border-color: #E85A4F;
+    border-radius: 8px;
+
+}
+
+.secondary-title{
+    color: #E98074;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.main-title{
+    font-family: 'Gothic A1', sans-serif;
+    color: #E85A4F;
+}
+
+.message{
+    font-family: 'PT Serif', serif;
+    color: #E85A4F;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid;
+    border-color: #E85A4F;
+    border-radius: 50%;
+    height: 15vh;
+    width: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    transition-duration: 0.4s;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg,#eae7dc,#eae7dc,#d8c3a5);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+
+.message:hover{
+    height: 20vh;
+    width: 20vh;
+}
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

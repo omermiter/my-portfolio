@@ -1,0 +1,43 @@
+.cursor{
+    width: 10px;
+    height: 10px;
+    border: 2px solid #E85A4F;
+    border-radius: 50%;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+    position: absolute;
+}
+
+body{
+    background-color: #EAE7DC;
+    cursor: none;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: ease-in;
+    scroll-snap-type: y mandatory;
+}
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-cont{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gothic A1', sans-serif;
+    color: #E85A4F;
+    flex-direction: column;
+    text-align: left;
+    font-size: 41.89px;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    
+}
+
+p{
+    scroll-snap-align: start;
+    
+}

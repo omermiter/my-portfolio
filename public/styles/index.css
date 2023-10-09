@@ -1,0 +1,148 @@
+.index-container{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.cursor{
+    width: 10px;
+    height: 10px;
+    border: 2px solid #E85A4F;
+    border-radius: 50%;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+}
+
+
+
+.title-container{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 40vh;
+}
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #8E8D8A;
+}
+
+a:active{
+    color: #8E8D8A;
+}
+
+a:hover{
+    cursor: none;
+}
+.title{
+    font-family: 'Gothic A1', sans-serif;
+    color: #E85A4F;
+}
+
+
+.secondary-title{
+    font-size: 16.00px;
+    color: #E98074;
+    font-family: 'PT Serif', serif;
+}
+
+.btn-container{
+    display: flex;
+
+    
+}
+
+body{
+    background-color: #EAE7DC;
+    cursor: none;
+}
+
+.square{
+    background-color: #D8C3A5;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    transition-duration: 1s;
+}
+
+
+.square:hover{
+    height: 22vh;
+    width: 22vh;
+}
+
+
+@media(max-width: 480px){
+    .btn-container{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+
+    .title{
+        font-size: 41.89px;
+        text-align: center;
+    }
+
+    .btn-container{
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .square{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        height: 10vh;
+        width: 10vh;
+    }
+
+    .cursor{
+        display: none;
+    }
+}
+
+
+@media(min-width: 1025px){
+    .btn-container{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+
+    .title{
+        font-size: 109.66px;
+    }
+
+    .btn-container{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .square{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        height: 20vh;
+        width: 20vh;
+    }
+
+}
+
+
+
+
+
+
