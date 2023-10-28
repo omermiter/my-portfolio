@@ -1,0 +1,115 @@
+.cursor{
+    width: 10px;
+    height: 10px;
+    border: 2px solid #E85A4F;
+    border-radius: 50%;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+    position: absolute;
+}
+
+body{
+    background-color: #EAE7DC;
+    cursor: none;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: ease-in;
+    scroll-snap-type: y mandatory;
+}
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-container{
+    height: 85vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.about-title{
+    color: #e85A4F;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 67.77px;
+    filter: blur(0px);
+    transition-duration: 0.4s;
+}
+
+.about-title:hover{
+    filter: blur(5px);
+    cursor: default;
+}
+
+.about-desc{
+    font-size: 25.89px;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.about-text{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.notice{
+    font-weight: bold;
+    color: #E98074;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.moving-container{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moving-text{
+    font-family: 'Julius Sans One', sans-serif;
+    color: #E98074;
+    font-size: 41.89px;
+    flex-shrink: 0;
+    animation: moving 20s infinite linear;
+}
+
+
+@keyframes moving {
+    from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+      }
+      to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+      }    
+}
+
+
+@media(max-width: 480px){
+    .about-desc{
+        font-size: 16px;
+    }
+
+    .about-title{
+        font-size: 41.89px;
+    }
+
+    .moving-text{
+        font-size: 25.89px;
+    }
+}
