@@ -1,0 +1,94 @@
+.cursor{
+    width: 10px;
+    height: 10px;
+    border: 2px solid #E85A4F;
+    border-radius: 50%;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+}
+
+body{
+    background-color: #EAE7DC;
+    cursor: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.project-container{
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-1{
+    background-color: #E85A4F;
+    width: 90vw;
+    height: 75vh;
+    border-radius: 8px;
+    background-image: url("../images/Screenshot\ 2023-10-22\ 232630.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 100%;
+    transition-duration: 0.6s;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    font-size: 41.89px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #E85A4F;
+}
+.numeric{
+    opacity: 0;
+    font-size: 25.89px;
+    text-align: center;
+}
+.outer{
+    width: 90vw;
+    height: 75vh;
+}
+
+.project-desc{
+    width: 0%;
+    height: 100%;
+    background-color: #D8C3A5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+    flex-direction: column;
+    margin: 0%;
+}
+
+.project-name{
+    opacity: 0;
+    font-size: 41.89px;
+    transition-duration: 0.6s;
+}
+
+.project-par{
+    opacity: 0;
+    font-size: 25.89px;
+    text-align: center;
+    transition-duration: 0.6s;
+}
+
+.page-title{
+    font-size: 41.89px;
+    font-family: 'Gothic A1', sans-serif;
+    color: #E85A4F;
+}
+
+@media(max-width: 480px){
+    .cursor{
+        display: none;
+    }
+}
+
+@media(min-width: 1025px){
+    .proj-title{
+        font-size: 67.77px;
+    }
+}
